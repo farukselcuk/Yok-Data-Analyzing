@@ -63,7 +63,8 @@
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" />
+                            <img src="../../assets/images/logoyazi.png" alt="homepage" class="light-logo" style="margin-left: 10px;" />
+
 
                         </span>
                         <!-- Logo icon -->
