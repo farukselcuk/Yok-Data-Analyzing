@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DataTableController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/index', function () {
@@ -50,3 +51,5 @@ Route::get('/pages-calendar', function () {
 Route::get('/pages-invoice', function () {
     return view('pages-invoice');
 });
+Route::get('/universites', [DataTableController::class, 'tables']);
+
