@@ -13,7 +13,7 @@
     <meta name="robots" content="noindex,nofollow">
     <title>Matrix Admin Lite Free Versions Template by WrapPixel</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/logomuz2.png">
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
@@ -55,14 +55,14 @@
                         <b class="logo-icon ps-2">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="../../assets/images/logo-icon.png" alt="homepage" class="light-logo" />
+                            <img src="../../assets/images/logomuz2.png" alt="homepage" class="light-logo" />
 
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" />
+                            <img src="../../assets/images/logoyazi.png" alt="homepage" class="light-logo" />
 
                         </span>
                         <!-- Logo icon -->
