@@ -253,7 +253,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                href="{{ url('/index') }}" aria-expanded="false">
                                 <i class="mdi mdi-view-dashboard"></i>
-                                <span class="hide-menu">Dashboard</span>
+                                <span class="hide-menu">Kontrol Paneli</span>
                             </a>
                         </li>
 
@@ -261,7 +261,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                href="{{ url('/charts') }}" aria-expanded="false">
                                 <i class="mdi mdi-chart-bar"></i>
-                                <span class="hide-menu">Charts</span>
+                                <span class="hide-menu">Cizelgeler</span>
                             </a>
                         </li>
 
@@ -269,7 +269,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                href="{{ url('/widgets') }}" aria-expanded="false">
                                 <i class="mdi mdi-chart-bubble"></i>
-                                <span class="hide-menu">New Updates</span>
+                                <span class="hide-menu">Yeni Güncellemeler</span>
                             </a>
                         </li>
 
@@ -277,7 +277,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                href="{{ url('/tables') }}" aria-expanded="false">
                                 <i class="mdi mdi-border-inside"></i>
-                                <span class="hide-menu">Tables</span>
+                                <span class="hide-menu">Tablolar</span>
                             </a>
                         </li>
 
@@ -285,7 +285,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                href="{{ url('/pages-gallery') }}" aria-expanded="false">
                                 <i class="mdi mdi-multiplication-box"></i>
-                                <span class="hide-menu">Gallery</span>
+                                <span class="hide-menu">Galeri</span>
                             </a>
                         </li>
                     </ul>
@@ -336,11 +336,11 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Real Time Chart</h5>
+                                <h5 class="card-title">Anlık ziyaretici</h5>
                                 <div id="real-time" style="height:400px;"></div>
-                                <p>Time between updates:
+                                <p>Güncellemeler arasındaki süre:
                                     <input id="updateInterval" type="text" value=""
-                                        style="text-align: right; width:5em"> milliseconds
+                                        style="text-align: right; width:5em"> milisaniye
                                 </p>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Turning-series chart</h5>
+                                <h5 class="card-title">Bölüm puanları grafiği</h5>
                                 <div id="placeholder" style="height: 400px;"></div>
                                 <p id="choices" class="mt-3"></p>
                             </div>
@@ -438,7 +438,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Bar Chart</h5>
+                                <h5 class="card-title">Bolum karşılaştırma</h5>
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flot-line-chart"></div>
                                 </div>
@@ -452,7 +452,7 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Pie Chart</h5>
+                                <h5 class="card-title">Bolum cinsiyet dağılımı</h5>
                                 <div class="pie" style="height: 400px;"></div>
                             </div>
                         </div>
@@ -460,7 +460,7 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Line Chart</h5>
+                                <h5 class="card-title">Yıllara göre kontenjan</h5>
                                 <div class="bars" style="height: 400px;"></div>
                             </div>
                         </div>
