@@ -338,9 +338,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Anlık ziyaretici</h5>
                                 <div id="real-time" style="height:400px;"></div>
-                                <p>Time between updates:
+                                <p>Güncellemeler arasındaki süre:
                                     <input id="updateInterval" type="text" value=""
-                                        style="text-align: right; width:5em"> milliseconds
+                                        style="text-align: right; width:5em"> milisaniye
                                 </p>
                             </div>
                         </div>
