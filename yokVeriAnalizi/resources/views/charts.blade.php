@@ -336,7 +336,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Real Time Chart</h5>
+                                <h5 class="card-title">Anlık ziyaretici</h5>
                                 <div id="real-time" style="height:400px;"></div>
                                 <p>Time between updates:
                                     <input id="updateInterval" type="text" value=""
@@ -352,7 +352,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Turning-series chart</h5>
+                                <h5 class="card-title">Bölüm puanları grafiği</h5>
                                 <div id="placeholder" style="height: 400px;"></div>
                                 <p id="choices" class="mt-3"></p>
                             </div>
@@ -438,7 +438,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Bar Chart</h5>
+                                <h5 class="card-title">Bolum karşılaştırma</h5>
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flot-line-chart"></div>
                                 </div>
@@ -452,7 +452,7 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Pie Chart</h5>
+                                <h5 class="card-title">Bolum cinsiyet dağılımı</h5>
                                 <div class="pie" style="height: 400px;"></div>
                             </div>
                         </div>
@@ -460,7 +460,7 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Line Chart</h5>
+                                <h5 class="card-title">Yıllara göre kontenjan</h5>
                                 <div class="bars" style="height: 400px;"></div>
                             </div>
                         </div>
