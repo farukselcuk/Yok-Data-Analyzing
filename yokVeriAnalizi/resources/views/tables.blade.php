@@ -254,7 +254,7 @@
                           <a class="sidebar-link waves-effect waves-dark sidebar-link"
                              href="{{ url('/index') }}" aria-expanded="false">
                               <i class="mdi mdi-view-dashboard"></i>
-                              <span class="hide-menu">Dashboard</span>
+                              <span class="hide-menu">Kontrol paneli</span>
                           </a>
                       </li>
 
@@ -262,7 +262,7 @@
                           <a class="sidebar-link waves-effect waves-dark sidebar-link"
                              href="{{ url('/charts') }}" aria-expanded="false">
                               <i class="mdi mdi-chart-bar"></i>
-                              <span class="hide-menu">Charts</span>
+                              <span class="hide-menu">Cizelgeler</span>
                           </a>
                       </li>
 
@@ -270,7 +270,7 @@
                           <a class="sidebar-link waves-effect waves-dark sidebar-link"
                              href="{{ url('/widgets') }}" aria-expanded="false">
                               <i class="mdi mdi-chart-bubble"></i>
-                              <span class="hide-menu">New Updates</span>
+                              <span class="hide-menu">Yeni Güncellemeler</span>
                           </a>
                       </li>
 
@@ -278,7 +278,7 @@
                           <a class="sidebar-link waves-effect waves-dark sidebar-link"
                              href="{{ url('/tables') }}" aria-expanded="false">
                               <i class="mdi mdi-border-inside"></i>
-                              <span class="hide-menu">Tables</span>
+                              <span class="hide-menu">Tablolar</span>
                           </a>
                       </li>
 
@@ -286,7 +286,7 @@
                           <a class="sidebar-link waves-effect waves-dark sidebar-link"
                              href="{{ url('/pages-gallery') }}" aria-expanded="false">
                               <i class="mdi mdi-multiplication-box"></i>
-                              <span class="hide-menu">Gallery</span>
+                              <span class="hide-menu">Galeri</span>
                           </a>
                       </li>
                   </ul>
