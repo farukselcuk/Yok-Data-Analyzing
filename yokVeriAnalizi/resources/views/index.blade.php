@@ -116,7 +116,7 @@
                         <!-- Search -->
                         <!-- ============================================================== -->
                         <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="ti-search"></i></a>
+                                href="javascript:cd void(0)"><i class="ti-search"></i></a>
                             <form class="app-search position-absolute">
                                 <input type="text" class="form-control" placeholder="Search &amp; enter"> <a
                                     class="srh-btn"><i class="ti-close"></i></a>
@@ -271,9 +271,6 @@
                                     class="hide-menu">Tables</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                                      href="{{ url('/grid') }}" aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span
-                                    class="hide-menu">Full Width</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
-                                href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span
                                     class="hide-menu">Forms </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="{{ url('/form-basic') }}" class="sidebar-link"><i
