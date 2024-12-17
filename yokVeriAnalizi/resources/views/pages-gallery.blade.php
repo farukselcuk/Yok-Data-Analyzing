@@ -348,8 +348,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Fırat Üniversitesi</h4> <span class="text-muted">TR'de önder
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -371,8 +371,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Marmara Üniversitesi</h4> <span class="text-muted">
+                                       </span>
                                 </div>
                             </div>
                         </div>
@@ -394,8 +394,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Selçuk Üniversitesi</h4> <span class="text-muted">
+                                       </span>
                                 </div>
                             </div>
                         </div>
@@ -417,31 +417,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img3.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="list-style-none el-info">
-                                            <li class="el-item"><a
-                                                    class="btn default btn-outline image-popup-vertical-fit el-link"
-                                                    href="../../assets/images/big/img3.jpg"><i
-                                                        class="mdi mdi-magnify-plus"></i></a></li>
-                                            <li class="el-item"><a class="btn default btn-outline el-link"
-                                                    href="javascript:void(0);"><i class="mdi mdi-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Uludağ Üniversitesi</h4> <span class="text-muted">
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -455,7 +432,7 @@
                                         <ul class="list-style-none el-info">
                                             <li class="el-item"><a
                                                     class="btn default btn-outline image-popup-vertical-fit el-link"
-                                                    href="../../assets/images/big/img5.jpg"><i
+                                                    href="../../assets/images/big/img3.jpg"><i
                                                         class="mdi mdi-magnify-plus"></i></a></li>
                                             <li class="el-item"><a class="btn default btn-outline el-link"
                                                     href="javascript:void(0);"><i class="mdi mdi-link"></i></a></li>
@@ -463,8 +440,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Fenerbahçe Üniversitesi</h4> <span class="text-muted">
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -478,6 +455,29 @@
                                         <ul class="list-style-none el-info">
                                             <li class="el-item"><a
                                                     class="btn default btn-outline image-popup-vertical-fit el-link"
+                                                    href="../../assets/images/big/img5.jpg"><i
+                                                        class="mdi mdi-magnify-plus"></i></a></li>
+                                            <li class="el-item"><a class="btn default btn-outline el-link"
+                                                    href="javascript:void(0);"><i class="mdi mdi-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h4 class="mb-0">İstanbul Teknik Üniversitesi</h4> <span class="text-muted">
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img7.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="list-style-none el-info">
+                                            <li class="el-item"><a
+                                                    class="btn default btn-outline image-popup-vertical-fit el-link"
                                                     href="../../assets/images/big/img6.jpg"><i
                                                         class="mdi mdi-magnify-plus"></i></a></li>
                                             <li class="el-item"><a class="btn default btn-outline el-link"
@@ -486,8 +486,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Atatürk Üniversitesi</h4> <span class="text-muted">
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -495,7 +495,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img1.jpg"
+                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img8.jpg"
                                         alt="user" />
                                     <div class="el-overlay">
                                         <ul class="list-style-none el-info">
@@ -509,8 +509,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">İzmir Katip Çelebi</h4> <span class="text-muted">
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -518,7 +518,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img1.jpg"
+                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img9.jpg"
                                         alt="user" />
                                     <div class="el-overlay">
                                         <ul class="list-style-none el-info">
@@ -532,8 +532,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">İstanbul Üniversitesi</h4> <span class="text-muted">
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -541,7 +541,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img2.jpg"
+                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img10.jpg"
                                         alt="user" />
                                     <div class="el-overlay">
                                         <ul class="list-style-none el-info">
@@ -555,8 +555,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">İnönü Üniversitesi</h4> <span class="text-muted">
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -564,7 +564,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img3.jpg"
+                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img11.jpg"
                                         alt="user" />
                                     <div class="el-overlay">
                                         <ul class="list-style-none el-info">
@@ -578,8 +578,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Antalya Akev Üniversitesi</h4> <span class="text-muted">
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -587,7 +587,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img4.jpg"
+                                <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/big/img12.jpg"
                                         alt="user" />
                                     <div class="el-overlay">
                                         <ul class="list-style-none el-info">
@@ -601,8 +601,8 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                    <h4 class="mb-0">Project title</h4> <span class="text-muted">subtitle of
-                                        project</span>
+                                    <h4 class="mb-0">Çukurova Üniversitesi</h4> <span class="text-muted">
+                                       </span>
                                 </div>
                             </div>
                         </div>
