@@ -11,7 +11,7 @@
     <meta name="description"
         content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Matrix Admin Lite Free Versions Template by WrapPixel</title>
+    <title>YÖK Veri Analizi</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/logomuz2.png">
     <!-- Custom CSS -->
@@ -63,7 +63,7 @@
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="../../assets/images/logoyazi.png" alt="homepage" class="light-logo" style="margin-left: 5px;" />
+                            <img src="../../assets/images/logoyazi.svg" alt="homepage" class="light-logo" style="margin-left: 5px;" />
 
 
                         </span>
