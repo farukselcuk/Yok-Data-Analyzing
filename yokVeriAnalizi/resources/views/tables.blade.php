@@ -276,7 +276,7 @@
 
                       <li class="sidebar-item">
                           <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                             href="{{ url('/tables') }}" aria-expanded="false">
+                             href="{{ url('/universites') }}" aria-expanded="false">
                               <i class="mdi mdi-border-inside"></i>
                               <span class="hide-menu">Tablolar</span>
                           </a>
@@ -353,28 +353,36 @@
                                 </tbody>
                             </table>
                         </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Üniversite Verileri</h5>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered">
-                                            <thead>
-                                            <tr>
-                                                <th>Üniversite Adı</th>
-                                                <th>Şehir</th>
-                                                <th>Bölüm Adı</th>
-                                                <th>Puan</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            @foreach($universites as $university)
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Üniversite Verileri</h5>
+                                        <!-- Arama Butonu -->
+                                        <div class="d-flex justify-content-end mb-3">
+                                            <form action="{{ route('universites.search') }}" method="GET">
+                                                <input type="text" name="query" class="form-control" placeholder="Arama yap..." style="width: 300px;" />
+                                                <button type="submit" class="btn btn-primary mt-2">Ara</button>
+                                            </form>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
                                                 <tr>
-                                                    <td>{{ $university->universite_adi}}</td>
-                                                    <td>{{ $university->sehir }}</td>
-                                                    <td>{{ $university->bolum_adi }}</td>
-                                                    <td>{{ $university->puan }}</td>
+                                                    <th>Üniversite Adı</th>
+                                                    <th>Şehir</th>
+                                                    <th>Bölüm Adı</th>
+                                                    <th>Puan</th>
                                                 </tr>
-                                            @endforeach
+                                                </thead>
+                                                <tbody>
+                                                @foreach($universites as $university)
+                                                    <tr>
+                                                        <td>{{ $university->universite_adi }}</td>
+                                                        <td>{{ $university->sehir }}</td>
+                                                        <td>{{ $university->bolum_adi }}</td>
+                                                        <td>{{ $university->puan }}</td>
+                                                    </tr>
+                                                @endforeach
 
                                             </tbody>
                                         </table>

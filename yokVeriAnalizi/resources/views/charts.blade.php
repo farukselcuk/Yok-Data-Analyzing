@@ -275,7 +275,7 @@
 
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               href="{{ url('/tables') }}" aria-expanded="false">
+                               href="{{ url('/universites') }}" aria-expanded="false">
                                 <i class="mdi mdi-border-inside"></i>
                                 <span class="hide-menu">Tablolar</span>
                             </a>
@@ -452,20 +452,22 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Bolum cinsiyet dağılımı</h5>
-                                <div class="pie" style="height: 400px;"></div>
+                                <h5 class="card-title">Bölüm Türü Dağılımı</h5>
+                                <canvas id="pieChart" style="height: 400px;"></canvas>
+                                <!-- <pre>{{ json_encode($dataArr, JSON_PRETTY_PRINT) }}</pre> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Yıllara göre kontenjan</h5>
+                                <h5 class="card-title">Yıllara Göre Kontenjan</h5>
                                 <div class="bars" style="height: 400px;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- End Charts -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
@@ -528,6 +530,26 @@
     <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="../../assets/libs/chart/turning-series.js"></script>
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('pieChart').getContext('2d');
+            const data = @json($dataArr); // Veriyi PHP'den JavaScript'e geçirme
+            new Chart(ctx, {
+                type: 'pie',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                    },
+                },
+            });
+        });
+    </script>
+
 </body>
 
 </html>

@@ -275,7 +275,7 @@
 
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               href="{{ url('/tables') }}" aria-expanded="false">
+                               href="{{ url('/universites') }}" aria-expanded="false">
                                 <i class="mdi mdi-border-inside"></i>
                                 <span class="hide-menu">Tablolar</span>
                             </a>

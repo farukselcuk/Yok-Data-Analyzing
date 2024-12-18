@@ -279,7 +279,7 @@
 
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               href="{{ url('/tables') }}" aria-expanded="false">
+                               href="{{ url('/universites') }}" aria-expanded="false">
                                 <i class="mdi mdi-border-inside"></i>
                                 <span class="hide-menu">Tablolar</span>
                             </a>
@@ -446,81 +446,68 @@
                 <div class="row">
 
                         <!-- card new -->
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title mb-0">Yeni Güncellemeler</h4>
-                            </div>
-                            <ul class="list-style-none">
-                                <li class="d-flex no-block card-body">
-                                    <i class="fa fa-check-circle w-30px mt-1"></i>
-                                    <div>
-                                        <a href="#" class="mb-0 font-medium p-0">Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit.</a>
-                                        <span class="text-muted">dolor sit amet, consectetur adipiscing</span>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0">Güncellemeler</h4>
+                        </div>
+                        <ul class="list-style-none">
+                            <li class="d-flex no-block card-body">
+                                <i class="fa fa-check-circle w-30px mt-1"></i>
+                                <div>
+                                    <a href="#" class="mb-0 font-medium p-0">Proje Başladı</a>
+                                    <span class="text-muted">Proje ekibimiz çalışmalara başladı. İlk etapta altyapı planlaması ve görev dağılımları tamamlandı.</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="tetx-right">
+                                        <h5 class="text-muted mb-0">20</h5>
+                                        <span class="text-muted font-16">Jan</span>
                                     </div>
-                                    <div class="ms-auto">
-                                        <div class="tetx-right">
-                                            <h5 class="text-muted mb-0">20</h5>
-                                            <span class="text-muted font-16">Jan</span>
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="d-flex no-block card-body border-top">
+                                <i class="fa fa-gift w-30px mt-1"></i>
+                                <div>
+                                    <a href="#" class="mb-0 font-medium p-0"> Frontend Güncellemeleri</a>
+                                    <span class="text-muted">Web sitemizin kullanıcı arayüzünde önemli değişiklikler yapıldı.<br>
+Tasarım daha modern ve kullanıcı dostu hale getirildi.<br>
+Responsive yapı güçlendirildi ve mobil cihazlarda daha iyi görünüm sağlandı.</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="tetx-right">
+                                        <h5 class="text-muted mb-0">17</h5>
+                                        <span class="text-muted font-16">Jan</span>
                                     </div>
-                                </li>
-                                <li class="d-flex no-block card-body border-top">
-                                    <i class="fa fa-gift w-30px mt-1"></i>
-                                    <div>
-                                        <a href="#" class="mb-0 font-medium p-0">Congratulation Maruti, Happy
-                                            Birthday</a>
-                                        <span class="text-muted">many many happy returns of the day</span>
+                                </div>
+                            </li>
+                            <li class="d-flex no-block card-body border-top">
+                                <i class="fa fa-plus w-30px mt-1"></i>
+                                <div>
+                                    <a href="#" class="mb-0 font-medium p-0">Grafik ve İstatistik Eklemesi (Charts)</a>
+                                    <span class="text-muted">Kullanıcı verilerini görselleştirmek için dinamik grafikler eklendi. <br>
+Grafikler sayesinde veri analizleri daha hızlı ve kolay yapılabilecek.</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="tetx-right">
+                                        <h5 class="text-muted mb-0">13</h5>
+                                        <span class="text-muted font-16">Jan</span>
                                     </div>
-                                    <div class="ms-auto">
-                                        <div class="tetx-right">
-                                            <h5 class="text-muted mb-0">11</h5>
-                                            <span class="text-muted font-16">Jan</span>
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="d-flex no-block card-body border-top">
+                                <i class="fa fa-leaf w-30px mt-1"></i>
+                                <div>
+                                    <a href="#" class="mb-0 font-medium p-0">Veritabanı Bağlantısı Tamamlandı</a>
+                                    <span class="text-muted">eritabanı entegrasyonu tamamlandı ve sistemin temel işlevleri aktif hale getirildi.</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="tetx-right">
+                                        <h5 class="text-muted mb-0">11</h5>
+                                        <span class="text-muted font-16">Jan</span>
                                     </div>
-                                </li>
-                                <li class="d-flex no-block card-body border-top">
-                                    <i class="fa fa-plus w-30px mt-1"></i>
-                                    <div>
-                                        <a href="#" class="mb-0 font-medium p-0">Maruti is a Responsive Admin theme</a>
-                                        <span class="text-muted">But already everything was solved. It will ...</span>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <div class="tetx-right">
-                                            <h5 class="text-muted mb-0">19</h5>
-                                            <span class="text-muted font-16">Jan</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="d-flex no-block card-body border-top">
-                                    <i class="fa fa-leaf w-30px mt-1"></i>
-                                    <div>
-                                        <a href="#" class="mb-0 font-medium p-0">Envato approved Maruti Admin
-                                            template</a>
-                                        <span class="text-muted">i am very happy to approved by TF</span>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <div class="tetx-right">
-                                            <h5 class="text-muted mb-0">20</h5>
-                                            <span class="text-muted font-16">Jan</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="d-flex no-block card-body border-top">
-                                    <i class="fa fa-question-circle w-30px mt-1"></i>
-                                    <div>
-                                        <a href="#" class="mb-0 font-medium p-0"> I am alwayse here if you have any
-                                            question</a>
-                                        <span class="text-muted">we glad that you choose our template</span>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <div class="tetx-right">
-                                            <h5 class="text-muted mb-0">15</h5>
-                                            <span class="text-muted font-16">Jan</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </li>
+
+                        </ul>
                         </div>
                     </div>
 

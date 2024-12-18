@@ -6,10 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Universites2022 extends Model
 {
-    protected $table = 'universites_2022';
-    public $timestamps = false;
-
-
+    protected $table = 'universites_2022';  // Tablo adı
+    public $timestamps = false;  // Zaman damgası kullanmıyorsanız doğru
 
     protected $fillable = [
         'universite_id',
@@ -24,3 +22,4 @@ class Universites2022 extends Model
         'bolum_kodu'
     ];
 }
+
