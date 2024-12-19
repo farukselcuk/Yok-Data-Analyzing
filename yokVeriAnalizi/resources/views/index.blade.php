@@ -497,7 +497,7 @@ Grafikler sayesinde veri analizleri daha hızlı ve kolay yapılabilecek.</span>
                                 <i class="fa fa-leaf w-30px mt-1"></i>
                                 <div>
                                     <a href="#" class="mb-0 font-medium p-0">Veritabanı Bağlantısı Tamamlandı</a>
-                                    <span class="text-muted">eritabanı entegrasyonu tamamlandı ve sistemin temel işlevleri aktif hale getirildi.</span>
+                                    <span class="text-muted">Veritabanı entegrasyonu tamamlandı ve sistemin temel işlevleri aktif hale getirildi.</span>
                                 </div>
                                 <div class="ms-auto">
                                     <div class="tetx-right">
