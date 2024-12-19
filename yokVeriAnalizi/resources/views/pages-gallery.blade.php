@@ -66,7 +66,7 @@
 
                         </span>
                         <!-- Logo icon -->
-                        <!-- <b class="logo-icon"> -->
+                        <!-- <b class="logomuz2.png"> -->
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                         <!-- Dark Logo icon -->
                         <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->

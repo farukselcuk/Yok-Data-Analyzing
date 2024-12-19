@@ -51,7 +51,7 @@
                     <!-- ============================================================== -->
                     <a class="navbar-brand" href="index.blade.php">
                         <!-- Logo icon -->
-                        <b class="logo-icon ps-2">
+                        <b class="logomuz2.png ps-2">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
                             <img src="../../assets/images/logomuz2.png" alt="homepage" class="light-logo" />
@@ -65,7 +65,7 @@
 
                         </span>
                         <!-- Logo icon -->
-                        <!-- <b class="logo-icon"> -->
+                        <!-- <b class="logomuz2.png"> -->
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                         <!-- Dark Logo icon -->
                         <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
