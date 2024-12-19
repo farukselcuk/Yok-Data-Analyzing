@@ -361,6 +361,39 @@
                 </div>
                 <!-- End Chart-2 -->
                 <!-- Cards -->
+
+                <!-- End cards -->
+                <!-- Chart-3 -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolum karşılaştırma</h5>
+                                <div class="flot-chart">
+                                    <div class="flot-chart-content" id="flot-line-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End chart-3 -->
+                <div class="row mb-3">
+                    <!-- Arama Kutusu -->
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" placeholder="Ara..." />
+                    </div>
+
+                    <!-- Seçim Kutusu -->
+                    <div class="col-md-3">
+                        <select class="form-select">
+                            <option value="" disabled selected>Seçim Yap</option>
+                            <option value="1">Seçenek 1</option>
+                            <option value="2">Seçenek 2</option>
+                            <option value="3">Seçenek 3</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card mt-0">
@@ -432,21 +465,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- End cards -->
-                <!-- Chart-3 -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Bolum karşılaştırma</h5>
-                                <div class="flot-chart">
-                                    <div class="flot-chart-content" id="flot-line-chart"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End chart-3 -->
                 <!-- Charts -->
                 <div class="row">
                     <div class="col-md-6">
