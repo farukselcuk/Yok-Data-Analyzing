@@ -13,7 +13,7 @@
     <meta name="robots" content="noindex,nofollow">
     <title>YÖK Veri Analizi</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/logomuz2.png">
     <!-- Custom CSS -->
     <link href="../../assets/libs/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
