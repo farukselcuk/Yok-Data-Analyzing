@@ -374,8 +374,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 fw-bold">150</h3>
-                                    <span class="text-muted">New Users</span>
+                                    <h3 class="mb-0 fw-bold">20513</h3>
+                                    <span class="text-muted">Mevcut Sayı</span>
                                 </div>
                             </div>
                         </div>
@@ -392,8 +392,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 fw-bold">4560</h3>
-                                    <span class="text-muted">Orders</span>
+                                    <h3 class="mb-0 fw-bold">13</h3>
+                                    <span class="text-muted">Spor Salonu Sayısı</span>
                                 </div>
                             </div>
                         </div>
@@ -410,8 +410,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 ">5672</h3>
-                                    <span class="text-muted">Active Users</span>
+                                    <h3 class="mb-0 ">5</h3>
+                                    <span class="text-muted">Laboratuar Sayısı</span>
                                 </div>
                             </div>
                         </div>
@@ -425,8 +425,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 fw-bold">2560</h3>
-                                    <span class="text-muted">Register</span>
+                                    <h3 class="mb-0 fw-bold">100000</h3>
+                                    <span class="text-muted">Yüz Ölçümü</span>
                                 </div>
                             </div>
                         </div>
