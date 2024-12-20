@@ -1,86 +1,74 @@
 $(function() {
-    var datasets = {
 
+    // Veri seti
+    var datasets = {
         "Tıp": {
             label: "Tıp",
-            data: [
+            data: smoothLine([
                 [2022, 500],
                 [2023, 400],
                 [2024, 450],
-            ]
+            ])
         },
         "Diş": {
             label: "Diş",
-            data: [
-                 [2022, 460],
-                 [2023, 350],
-                 [2024, 440],
-            ]
+            data: smoothLine([
+                [2022, 460],
+                [2023, 350],
+                [2024, 440],
+            ])
         },
-          "Yazılım Mühendisliği ": {
-                    label: "Yazılım Mühendisliği",
-                    data: [
-
-                        [2022, 250],
-                        [2023, 430],
-                        [2024, 350],
-
-
-                    ]
-                },
+        "Yazılım Mühendisliği": {
+            label: "Yazılım Mühendisliği",
+            data: smoothLine([
+                [2022, 250],
+                [2023, 430],
+                [2024, 350],
+            ])
+        },
         "Makine Mühendisliği": {
             label: "Makine Mühendisliği",
-            data: [
-              [2022, 310],
-              [2023, 380],
-              [2024, 290],
-            ]
+            data: smoothLine([
+                [2022, 310],
+                [2023, 380],
+                [2024, 290],
+            ])
         },
         "Elektrik Mühendisliği": {
             label: "Elektrik Mühendisliği",
-            data: [
-               [2022, 200],
-               [2023, 370],
-               [2024, 300],
-            ]
+            data: smoothLine([
+                [2022, 200],
+                [2023, 370],
+                [2024, 300],
+            ])
         },
         "Endistrü Mühendisliği": {
             label: "Endistrü Mühendisliği",
-            data: [
-              [2022, 250],
-                            [2023, 290],
-                            [2024, 230],
-            ]
+            data: smoothLine([
+                [2022, 250],
+                [2023, 290],
+                [2024, 230],
+            ])
         },
         "Bilgisayar Mühendisliği": {
             label: "Bilgisayar Mühendisliği",
-            data: [
-             [2022, 320],
-                           [2023, 420],
-                           [2024, 315],
-            ]
+            data: smoothLine([
+                [2022, 320],
+                [2023, 420],
+                [2024, 315],
+            ])
         },
-
-
     };
-   /* var dataSet = [
-    {label: "USA", color: "#005CDE" },
-    {label: "Russia", color: "#005CDE" },
-    { label: "UK", color: "#00A36A" },
-    { label: "Germany", color: "#7D0096" },
-    { label: "Denmark", color: "#992B00" },
-    { label: "Sweden", color: "#DE000F" },
-    { label: "Norway", color: "#ED7B00" }
-];*/
-    // hard-code color indices to prevent them from shifting as
-    // countries are turned on/off
+
+    // Renk indeksleri
     var i = 0;
     $.each(datasets, function(key, val) {
         val.color = i;
+        val.lines = { show: true }; // Çizgi olarak göster
         ++i;
     });
 
-    // insert checkboxes
+    // Checkbox'ları oluştur
     var choiceContainer = $("#choices");
     $.each(datasets, function(key, val) {
         choiceContainer.append('<input type="checkbox" name="' + key +
@@ -90,7 +78,7 @@ $(function() {
     });
     choiceContainer.find("input").click(plotAccordingToChoices);
 
-
+    // Çizgileri çiz
     function plotAccordingToChoices() {
         var data = [];
 
@@ -102,10 +90,38 @@ $(function() {
 
         if (data.length > 0)
             $.plot($("#placeholder"), data, {
+                series: {
+                    lines: { show: true, lineWidth: 2 }, // Çizgi kalınlığı
+                },
                 yaxis: { min: 0 },
                 xaxis: { tickDecimals: 0 }
             });
     }
 
     plotAccordingToChoices();
+
+    // Ara noktaları hesaplamak için bir fonksiyon
+    function smoothLine(data) {
+        var smoothedData = [];
+        for (var i = 0; i < data.length - 1; i++) {
+            var start = data[i];
+            var end = data[i + 1];
+
+            // Başlangıç ve bitiş noktalarını ekle
+            smoothedData.push(start);
+
+            // Ara noktalar oluştur (örneğin, 10 ara nokta)
+            var steps = 100; // Ara noktaların sayısı
+            for (var j = 1; j < steps; j++) {
+                var t = j / steps;
+                var interpolatedX = start[0] + t * (end[0] - start[0]);
+                var interpolatedY = start[1] + t * (end[1] - start[1]);
+                smoothedData.push([interpolatedX, interpolatedY]);
+            }
+        }
+
+        // Son noktayı ekle
+        smoothedData.push(data[data.length - 1]);
+        return smoothedData;
+    }
 });
