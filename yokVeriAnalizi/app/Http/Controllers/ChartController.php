@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use App\Models\Universites2022;
+use App\Models\Universites2023;
+use App\Models\Universites2024;
 
 class ChartController extends Controller
 {
+    // 2022 Verisi için Chart Data Metodu
     public function chartData(Request $request)
     {
         // Veritabanından puan_turu alanına göre sayım yap
@@ -17,7 +19,7 @@ class ChartController extends Controller
                         SUM(CASE WHEN puan_turu = 'söz' THEN 1 ELSE 0 END) as sozel
                     ")->first();
 
-        // Veriyi json formatında döndürme
+        // Veriyi json formatında frontend için düzenle
         $dataArr = [
             'labels' => ['Sayısal', 'Eşit Ağırlık', 'Sözel'], // Grafikte gösterilecek etiketler
             'datasets' => [
@@ -28,30 +30,25 @@ class ChartController extends Controller
                 ]
             ]
         ];
+
         // Veriyi view'e gönderme
         return view('charts', compact('dataArr'));
     }
-    namespace App\Http\Controllers;
 
-    use App\Models\Universites2023;
-    use App\Models\Universites2024;
-
-    class ChartController extends Controller
+    // 2023 ve 2024 Verisi için Chart Data Metodu
+    public function getDataFor2023And2024()
     {
-        public function getDataFor2023And2024()
-        {
-            // 2023 tablosundan veri al
-            $data2023 = Universites2023::where('department_name', 'Yazılım Mühendisliği')
-                ->avg('score'); // Ortalama puan
+        // 2023 tablosundan veri al
+        $data2023 = Universites2023::where('department_name', 'Yazılım Mühendisliği')
+            ->avg('score'); // Ortalama puan
 
-            // 2024 tablosundan veri al
-            $data2024 = Universites2024::where('department_name', 'Yazılım Mühendisliği')
-                ->avg('score'); // Ortalama puan
+        // 2024 tablosundan veri al
+        $data2024 = Universites2024::where('department_name', 'Yazılım Mühendisliği')
+            ->avg('score'); // Ortalama puan
 
-            return response()->json([
-                '2023' => $data2023,
-                '2024' => $data2024,
-            ]);
-        }
+        return response()->json([
+            '2023' => $data2023,
+            '2024' => $data2024,
+        ]);
     }
 }
