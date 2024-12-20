@@ -6,6 +6,7 @@ $(function() {
             label: "Tıp",
             data: smoothLine([
                 [2022, 500],
+               
                 [2023, 400],
                 [2024, 450],
             ])
