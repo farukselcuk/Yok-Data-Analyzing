@@ -23,6 +23,8 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -378,87 +380,72 @@
                 </div>
                 <!-- End chart-3 -->
                 <div class="row mb-3">
-                    <!-- Arama Kutusu -->
-                    <div class="col-md-9">
-                        <input type="text" class="form-control" placeholder="Ara..." />
-                    </div>
-
-                    <!-- Seçim Kutusu -->
-                    <div class="col-md-3">
-                        <select class="form-select">
-                            <option value="" disabled selected>Seçim Yap</option>
-                            <option value="1">Seçenek 1</option>
-                            <option value="2">Seçenek 2</option>
-                            <option value="3">Seçenek 3</option>
+                    <div class="col-md-12">
+                        <select class="form-select" id="universiteSelect" name="universite">
+                            <option value="" disabled selected>Üniversite Seçiniz</option>
+                            @foreach($universiteler as $universite)
+                                <option value="{{ $universite->universite_adi }}">{{ $universite->universite_adi }}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="card mt-0">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="peity_line_neutral left text-center mt-2"><span><span
-                                                style="display: none;">10,15,8,14,13,10,10</span>
-                                            <canvas width="50" height="24"></canvas>
-                                        </span>
-                                        <h6>10%</h6>
+                                    <div class="left text-center mt-3">
+                                        <i class="fas fa-users fa-2x text-primary"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 fw-bold">20513</h3>
-                                    <span class="text-muted">Mevcut Sayı</span>
+                                    <h3 class="mb-0 fw-bold" id="mevcutSayi">0</h3>
+                                    <span class="text-muted">Mevcut Öğrenci Sayısı</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="card mt-0">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="peity_bar_bad left text-center mt-2"><span><span
-                                                style="display: none;">3,5,6,16,8,10,6</span>
-                                            <canvas width="50" height="24"></canvas>
-                                        </span>
-                                        <h6>-40%</h6>
+                                    <div class="left text-center mt-3">
+                                        <i class="fas fa-dumbbell fa-2x text-warning"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 fw-bold">13</h3>
+                                    <h3 class="mb-0 fw-bold">0</h3>
                                     <span class="text-muted">Spor Salonu Sayısı</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="card mt-0">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="peity_line_good left text-center mt-2"><span><span
-                                                style="display: none;">12,6,9,23,14,10,17</span>
-                                            <canvas width="50" height="24"></canvas>
-                                        </span>
-                                        <h6>+60%</h6>
+                                    <div class="left text-center mt-3">
+                                        <i class="fas fa-flask fa-2x text-success"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 ">5</h3>
+                                    <h3 class="mb-0">0</h3>
                                     <span class="text-muted">Laboratuar Sayısı</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="card mt-0">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="peity_bar_good left text-center mt-2"><span>12,6,9,23,14,10,13</span>
-                                        <h6>+30%</h6>
+                                    <div class="left text-center mt-3">
+                                        <i class="fas fa-ruler-combined fa-2x text-info"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6 border-left text-center pt-2">
-                                    <h3 class="mb-0 fw-bold">100000</h3>
+                                    <h3 class="mb-0 fw-bold">0</h3>
                                     <span class="text-muted">Yüz Ölçümü</span>
                                 </div>
                             </div>
@@ -472,15 +459,14 @@
                             <div class="card-body">
                                 <h5 class="card-title">Bölüm Türü Dağılımı</h5>
                                 <canvas id="pieChart" style="height: 400px;"></canvas>
-                                <!-- <pre>{{ json_encode($dataArr, JSON_PRETTY_PRINT) }}</pre> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Yıllara Göre Kontenjan</h5>
-                                <div class="bars" style="height: 400px;"></div>
+                                <h5 class="card-title">Yıllara Göre Bölüm Sayısı</h5>
+                                <canvas id="barChart" style="height: 400px;"></canvas>
                             </div>
                         </div>
                     </div>
@@ -550,10 +536,60 @@
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        // Global değişkenler
+        let pieChart = null;
+        let barChart = null;
+
+        $(document).ready(function() {
+            $('#universiteSelect').change(function() {
+                var universiteId = $(this).val();
+                console.log('Seçilen üniversite:', universiteId);
+                
+                var encodedId = encodeURIComponent(universiteId);
+                
+                $.ajax({
+                    url: '/get-universite-data/' + encodedId,
+                    type: 'GET',
+                    success: function(response) {
+                        console.log('AJAX yanıtı:', response);
+                        
+                        // Mevcut öğrenci sayısı
+                        $('#mevcutSayi').text(response.mevcut_sayi || '0');
+                        
+                        // Spor salonu sayısı - düzeltilmiş seçici
+                        $('.row .col-md-6:nth-child(2) .card .row .col-md-6:last-child h3').text(response.spor_salonu_sayisi || '0');
+                        
+                        // Laboratuvar sayısı - düzeltilmiş seçici
+                        $('.row .col-md-6:nth-child(3) .card .row .col-md-6:last-child h3').text(response.laboratuvar_sayisi || '0');
+                        
+                        // Yüz ölçümü - düzeltilmiş seçici
+                        $('.row .col-md-6:nth-child(4) .card .row .col-md-6:last-child h3').text(response.yuz_olcumu || '0');
+                        
+                        // Pasta grafiğini güncelle
+                        updatePieChart(response.bolum_dagilimi);
+                        
+                        // Kontenjan grafiğini güncelle
+                        updateBarChart(response.kontenjan_verileri);
+                    },
+                    error: function(error) {
+                        console.error('Veri getirme hatası:', error);
+                        console.error('Hata detayı:', error.responseJSON);
+                    }
+                });
+            });
+        });
+
+        // Pasta grafiğini güncelleme fonksiyonu
+        function updatePieChart(data) {
             const ctx = document.getElementById('pieChart').getContext('2d');
-            const data = @json($dataArr); // Veriyi PHP'den JavaScript'e geçirme
-            new Chart(ctx, {
+            
+            // Eğer önceki grafik varsa yok et
+            if (pieChart !== null) {
+                pieChart.destroy();
+            }
+            
+            // Yeni grafiği oluştur
+            pieChart = new Chart(ctx, {
                 type: 'pie',
                 data: data,
                 options: {
@@ -562,10 +598,52 @@
                         legend: {
                             position: 'top',
                         },
-                    },
-                },
+                        title: {
+                            display: true,
+                            text: 'Bölüm Türü Dağılımı'
+                        }
+                    }
+                }
             });
-        });
+        }
+
+        // Kontenjan grafiğini güncelleme fonksiyonu
+        function updateBarChart(data) {
+            console.log('Bar chart verileri:', data); // Debug için ekledik
+            
+            const ctx = document.getElementById('barChart').getContext('2d');
+            
+            if (barChart !== null) {
+                barChart.destroy();
+            }
+            
+            barChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Bölüm Sayısı'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Yıllara Göre Bölüm Sayısı'
+                        }
+                    }
+                }
+            });
+        }
     </script>
 
 </body>

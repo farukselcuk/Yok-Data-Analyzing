@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Universites2024 extends Model
+class Universite extends Model
 {
-    protected $table = 'universites_2024';
+    protected $table = 'universites_2022';
     
     protected $fillable = [
         'universite_id',
@@ -20,5 +20,4 @@ class Universites2024 extends Model
         'burs',
         'bolum_kodu'
     ];
-}
-
+} 
