@@ -197,4 +197,48 @@ class ChartController extends Controller
             ]]
         ];
     }
+
+    public function getUniversityTypes()
+    {
+        try {
+            $years = [2022, 2023, 2024];
+            $data = [
+                'devlet' => [],
+                'vakif' => [],
+                'kktc' => []
+            ];
+
+            foreach ($years as $year) {
+                $tableName = 'universites_' . $year;
+                
+                \Log::info("Querying table: " . $tableName); // Debug için log
+
+                // Her yıl için üniversite türlerine göre benzersiz üniversite sayılarını al
+                $counts = DB::table($tableName)
+                    ->select('universite_turu', DB::raw('COUNT(DISTINCT universite_adi) as total'))
+                    ->groupBy('universite_turu')
+                    ->get();
+
+                \Log::info("Counts for " . $year . ":", $counts->toArray()); // Debug için log
+
+                foreach ($counts as $count) {
+                    $tur = strtolower(trim($count->universite_turu));
+                    
+                    if ($tur == 'devlet') {
+                        $data['devlet'][] = [$year, (int)$count->total];
+                    } elseif ($tur == 'vakıf' || $tur == 'vakif') {
+                        $data['vakif'][] = [$year, (int)$count->total];
+                    } elseif ($tur == 'kktc') {
+                        $data['kktc'][] = [$year, (int)$count->total];
+                    }
+                }
+            }
+
+            \Log::info("Final data:", $data); // Debug için log
+            return response()->json($data);
+        } catch (\Exception $e) {
+            \Log::error("Error in getUniversityTypes: " . $e->getMessage());
+            return response()->json(['error' => $e->getMessage()], 500);
+        }
+    }
 }

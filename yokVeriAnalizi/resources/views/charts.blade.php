@@ -365,20 +365,22 @@
                 <!-- Cards -->
 
                 <!-- End cards -->
-                <!-- Chart-3 -->
+
+                <!-- End chart-3 -->
+                <!-- Üniversite Türü Dağılımı Grafiği -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Bolum karşılaştırma</h5>
+                                <h5 class="card-title">Üniversite Türü Dağılımı (2022-2024)</h5>
                                 <div class="flot-chart">
-                                    <div class="flot-chart-content" id="flot-line-chart"></div>
+                                    <div class="flot-chart-content" id="university-type-chart"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- End chart-3 -->
+                <!-- End chart-4 -->
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <select class="form-select" id="universiteSelect" name="universite">
@@ -544,30 +546,30 @@
             $('#universiteSelect').change(function() {
                 var universiteId = $(this).val();
                 console.log('Seçilen üniversite:', universiteId);
-                
+
                 var encodedId = encodeURIComponent(universiteId);
-                
+
                 $.ajax({
                     url: '/get-universite-data/' + encodedId,
                     type: 'GET',
                     success: function(response) {
                         console.log('AJAX yanıtı:', response);
-                        
+
                         // Mevcut öğrenci sayısı
                         $('#mevcutSayi').text(response.mevcut_sayi || '0');
-                        
+
                         // Spor salonu sayısı - düzeltilmiş seçici
                         $('.row .col-md-6:nth-child(2) .card .row .col-md-6:last-child h3').text(response.spor_salonu_sayisi || '0');
-                        
+
                         // Laboratuvar sayısı - düzeltilmiş seçici
                         $('.row .col-md-6:nth-child(3) .card .row .col-md-6:last-child h3').text(response.laboratuvar_sayisi || '0');
-                        
+
                         // Yüz ölçümü - düzeltilmiş seçici
                         $('.row .col-md-6:nth-child(4) .card .row .col-md-6:last-child h3').text(response.yuz_olcumu || '0');
-                        
+
                         // Pasta grafiğini güncelle
                         updatePieChart(response.bolum_dagilimi);
-                        
+
                         // Kontenjan grafiğini güncelle
                         updateBarChart(response.kontenjan_verileri);
                     },
@@ -582,12 +584,12 @@
         // Pasta grafiğini güncelleme fonksiyonu
         function updatePieChart(data) {
             const ctx = document.getElementById('pieChart').getContext('2d');
-            
+
             // Eğer önceki grafik varsa yok et
             if (pieChart !== null) {
                 pieChart.destroy();
             }
-            
+
             // Yeni grafiği oluştur
             pieChart = new Chart(ctx, {
                 type: 'pie',
@@ -610,13 +612,13 @@
         // Kontenjan grafiğini güncelleme fonksiyonu
         function updateBarChart(data) {
             console.log('Bar chart verileri:', data); // Debug için ekledik
-            
+
             const ctx = document.getElementById('barChart').getContext('2d');
-            
+
             if (barChart !== null) {
                 barChart.destroy();
             }
-            
+
             barChart = new Chart(ctx, {
                 type: 'bar',
                 data: data,
@@ -644,6 +646,105 @@
                 }
             });
         }
+
+        // Üniversite Türü Dağılımı için AJAX çağrısı
+        function loadUniversityTypeData() {
+            $.ajax({
+                url: '/get-university-types',
+                type: 'GET',
+                success: function(response) {
+                    console.log('Üniversite türü verileri:', response); // Debug için
+                    initUniversityTypeChart(response);
+                },
+                error: function(error) {
+                    console.error('Veri getirme hatası:', error);
+                }
+            });
+        }
+
+        // Üniversite Türü Grafiği
+        function initUniversityTypeChart(chartData) {
+            var typeData = [
+                {
+                    label: "Devlet",
+                    data: chartData.devlet || [],
+                    color: "#00c292",
+                    lines: { show: true },
+                    points: { show: true }
+                },
+                {
+                    label: "Vakıf",
+                    data: chartData.vakif || [],
+                    color: "#fb9678",
+                    lines: { show: true },
+                    points: { show: true }
+                },
+                {
+                    label: "KKTC",
+                    data: chartData.kktc || [],
+                    color: "#03a9f3",
+                    lines: { show: true },
+                    points: { show: true }
+                }
+            ];
+
+            var typeOptions = {
+                series: {
+                    lines: {
+                        show: true,
+                        lineWidth: 2
+                    },
+                    points: {
+                        show: true,
+                        radius: 4
+                    }
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: true,
+                    borderColor: "#ddd",
+                    borderWidth: 1,
+                    labelMargin: 10,
+                    backgroundColor: "#fff"
+                },
+                legend: {
+                    position: "ne",
+                    margin: [0, -24],
+                    noColumns: 0,
+                    labelBoxBorderColor: null,
+                    labelFormatter: function(label, series) {
+                        return label + ' Üniversiteleri &nbsp;&nbsp;';
+                    }
+                },
+                xaxis: {
+                    ticks: [[2022, "2022"], [2023, "2023"], [2024, "2024"]],
+                    tickLength: 0
+                },
+                yaxis: {
+                    min: 0,
+                    tickSize: 25
+                },
+                tooltip: true,
+                tooltipOpts: {
+                    content: "%s: %y üniversite",
+                    shifts: {
+                        x: -60,
+                        y: 25
+                    }
+                }
+            };
+
+            // Grafik çizimi öncesi konsola veri kontrolü
+            console.log('Grafik verileri:', typeData);
+            console.log('Grafik ayarları:', typeOptions);
+
+            $.plot("#university-type-chart", typeData, typeOptions);
+        }
+
+        // Sayfa yüklendiğinde grafiği başlat
+        $(document).ready(function() {
+            loadUniversityTypeData();
+        });
     </script>
 
 </body>

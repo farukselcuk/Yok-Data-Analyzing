@@ -75,3 +75,4 @@ Route::get('/universites/search', [TablesController::class, 'search'])->name('un
 Route::get('/charts', [ChartController::class, 'chartData'])->name('chart.data');
 
 Route::get('/get-universite-data/{id}', [ChartController::class, 'getUniversiteData']);
+Route::get('/get-university-types', [ChartController::class, 'getUniversityTypes']);
