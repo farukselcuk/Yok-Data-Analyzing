@@ -5,58 +5,58 @@ $(function() {
         "Tıp": {
             label: "Tıp",
             data: smoothLine([
-                [2022, 500],
-               
-                [2023, 400],
-                [2024, 450],
+                [2022, 473.57],
+
+                [2023, 479.48],
+                [2024, 480.04],
             ])
         },
         "Diş": {
             label: "Diş",
             data: smoothLine([
-                [2022, 460],
-                [2023, 350],
-                [2024, 440],
+                [2022, 439.65],
+                [2023, 439.55],
+                [2024, 445.13],
             ])
         },
         "Yazılım Mühendisliği": {
             label: "Yazılım Mühendisliği",
             data: smoothLine([
-                [2022, 250],
-                [2023, 430],
-                [2024, 350],
+                [2022, 373.11],
+                [2023, 374.27],
+                [2024, 370.38],
             ])
         },
         "Makine Mühendisliği": {
             label: "Makine Mühendisliği",
             data: smoothLine([
-                [2022, 310],
-                [2023, 380],
-                [2024, 290],
+                [2022, 374.78],
+                [2023, 380.08],
+                [2024, 377.79],
             ])
         },
         "Elektrik Mühendisliği": {
             label: "Elektrik Mühendisliği",
             data: smoothLine([
-                [2022, 200],
-                [2023, 370],
-                [2024, 300],
+                [2022, 385.18],
+                [2023, 392.07],
+                [2024, 410.05],
             ])
         },
         "Endistrü Mühendisliği": {
             label: "Endistrü Mühendisliği",
             data: smoothLine([
-                [2022, 250],
-                [2023, 290],
-                [2024, 230],
+                [2022, 386.12],
+                [2023, 379.28],
+                [2024, 385.978],
             ])
         },
         "Bilgisayar Mühendisliği": {
             label: "Bilgisayar Mühendisliği",
             data: smoothLine([
-                [2022, 320],
-                [2023, 420],
-                [2024, 315],
+                [2022, 392.06],
+                [2023, 390.96],
+                [2024, 395.12],
             ])
         },
     };
