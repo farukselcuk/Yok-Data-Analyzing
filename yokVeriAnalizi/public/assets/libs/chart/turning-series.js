@@ -94,7 +94,7 @@ $(function() {
                 series: {
                     lines: { show: true, lineWidth: 2 }, // Çizgi kalınlığı
                 },
-                yaxis: { min: 0 },
+                yaxis: { min: 370 },
                 xaxis: { tickDecimals: 0 }
             });
     }
