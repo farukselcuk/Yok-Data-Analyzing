@@ -94,8 +94,8 @@ $(function() {
                 series: {
                     lines: { show: true, lineWidth: 2 }, // Çizgi kalınlığı
                 },
-                yaxis: { min: 370 },
-                xaxis: { tickDecimals: 0 }
+                yaxis: { min: 370 , max : 485},
+                xaxis: { tickDecimals: 0  }
             });
     }
 
