@@ -2,20 +2,20 @@ $(function() {
 
     // Veri seti
     var datasets = {
-        "Tıp": {
-            label: "Tıp",
+        "Tıp  ": {
+            label: "Tıp   ",
             data: smoothLine([
                 [2022, 473.57],
 
-                [2023, 479.48],
+                [2023, 465.48],
                 [2024, 480.04],
             ])
         },
-        "Diş": {
-            label: "Diş",
+        "Diş    ": {
+            label: "Diş ",
             data: smoothLine([
                 [2022, 439.65],
-                [2023, 439.55],
+                [2023, 420.55],
                 [2024, 445.13],
             ])
         },
@@ -23,7 +23,7 @@ $(function() {
             label: "Yazılım Mühendisliği",
             data: smoothLine([
                 [2022, 373.11],
-                [2023, 374.27],
+                [2023, 390.27],
                 [2024, 370.38],
             ])
         },
@@ -31,7 +31,7 @@ $(function() {
             label: "Makine Mühendisliği",
             data: smoothLine([
                 [2022, 374.78],
-                [2023, 380.08],
+                [2023, 385.08],
                 [2024, 377.79],
             ])
         },
@@ -47,7 +47,7 @@ $(function() {
             label: "Endistrü Mühendisliği",
             data: smoothLine([
                 [2022, 386.12],
-                [2023, 379.28],
+                [2023, 399.28],
                 [2024, 385.978],
             ])
         },
@@ -55,10 +55,27 @@ $(function() {
             label: "Bilgisayar Mühendisliği",
             data: smoothLine([
                 [2022, 392.06],
-                [2023, 390.96],
+                [2023, 415.96],
                 [2024, 395.12],
             ])
         },
+        "Uzay Mühendisliği": {
+                   label: "Uzay Mühendisliği",
+                   data: smoothLine([
+                       [2022, 375.98],
+                       [2023, 411.04],
+                       [2024, 455.50],
+                   ])
+       },
+       "Kimya Mühendisliği": {
+                   label: "Kimya Mühendisliği",
+                   data: smoothLine([
+                       [2022, 460.06],
+                       [2023, 405.96],
+                       [2024, 365.12],
+                   ])
+       },
+
     };
 
     // Renk indeksleri
@@ -94,7 +111,7 @@ $(function() {
                 series: {
                     lines: { show: true, lineWidth: 2 }, // Çizgi kalınlığı
                 },
-                yaxis: { min: 370 , max : 485},
+                yaxis: { min: 369 , max : 485},
                 xaxis: { tickDecimals: 0  }
             });
     }
