@@ -14,7 +14,7 @@ $(document).ready(function() {
     }
 
     // === Make chart === //
-    var plot = $.plot($(".chart"), [{ data: sin, label: "sin(x)", color: "#ee7951" }, { data: cos, label: "cos(x)", color: "#4fb9f0" }], {
+    var plot = $.plot($(".chart"), [{ data: sinsin, label: "sin(x)", color: "#ee7951" }, { data: cos, label: "cos(x)", color: "#4fb9f0" }], {
         series: {
             lines: { show: true },
             points: { show: true }

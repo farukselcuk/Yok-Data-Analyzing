@@ -389,44 +389,56 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="bg-dark p-10 text-white text-center">
-                                                    <i class="fa fa-user mb-1 font-16"></i>
-                                                    <h5 class="mb-0 mt-1">2540</h5>
-                                                    <small class="font-light">Total Users</small>
+
+                                                    <h5 class="mb-0 mt-1">Tıp</h5>
+                                                    <small class="font-light">-----2022 - 575.69-----</small>
+                                                    <small class="font-light">-----2023 - 583.87-----</small>
+                                                    <small class="font-light">-----2024 - 545.33-----</small>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="bg-dark p-10 text-white text-center">
-                                                    <i class="fa fa-plus mb-1 font-16"></i>
-                                                    <h5 class="mb-0 mt-1">120</h5>
-                                                    <small class="font-light">New Users</small>
+
+                                                    <h5 class="mb-0 mt-1">Diş</h5>
+                                                    <small class="font-light">-----2022 - 545.59-----</small>
+                                                    <small class="font-light">-----2023 - 529.97-----</small>
+                                                    <small class="font-light">-----2024 - 558.45-----</small>
                                                 </div>
                                             </div>
                                             <div class="col-6 mt-3">
                                                 <div class="bg-dark p-10 text-white text-center">
-                                                    <i class="fa fa-cart-plus mb-1 font-16"></i>
-                                                    <h5 class="mb-0 mt-1">656</h5>
-                                                    <small class="font-light">Total Shop</small>
+
+                                                    <h5 class="mb-0 mt-1">Yazılım Mühendisliği</h5>
+                                                    <small class="font-light">-----2022 - 440.59-----</small>
+                                                    <small class="font-light">-----2023 - 460.87-----</small>
+                                                    <small class="font-light">-----2024 - 435.33-----</small>
                                                 </div>
                                             </div>
                                             <div class="col-6 mt-3">
                                                 <div class="bg-dark p-10 text-white text-center">
-                                                    <i class="fa fa-tag mb-1 font-16"></i>
-                                                    <h5 class="mb-0 mt-1">9540</h5>
-                                                    <small class="font-light">Total Orders</small>
+
+                                                    <h5 class="mb-0 mt-1">Makine Mühendisliği</h5>
+                                                   <small class="font-light">-----2022 - 480.99-----</small>
+                                                   <small class="font-light">-----2023 - 512.07-----</small>
+                                                   <small class="font-light">-----2024 - 469.22-----</small>
                                                 </div>
                                             </div>
                                             <div class="col-6 mt-3">
                                                 <div class="bg-dark p-10 text-white text-center">
-                                                    <i class="fa fa-table mb-1 font-16"></i>
-                                                    <h5 class="mb-0 mt-1">100</h5>
-                                                    <small class="font-light">Pending Orders</small>
+
+                                                    <h5 class="mb-0 mt-1">Elektrik Mühendisliği</h5>
+                                                   <small class="font-light">-----2022 - 486.79-----</small>
+                                                   <small class="font-light">-----2023 - 530.67-----</small>
+                                                   <small class="font-light">-----2024 - 507.65-----</small>
                                                 </div>
                                             </div>
                                             <div class="col-6 mt-3">
                                                 <div class="bg-dark p-10 text-white text-center">
-                                                    <i class="fa fa-globe mb-1 font-16"></i>
-                                                    <h5 class="mb-0 mt-1">8540</h5>
-                                                    <small class="font-light">Online Orders</small>
+
+                                                    <h5 class="mb-0 mt-1">Bilgisayar Mühendisliği</h5>
+                                                    <small class="font-light">-----2022 - 440.59-----</small>
+                                                    <small class="font-light">-----2023 - 460.87-----</small>
+                                                    <small class="font-light">-----2024 - 435.33-----</small>
                                                 </div>
                                             </div>
                                         </div>
