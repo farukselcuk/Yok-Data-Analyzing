@@ -11,11 +11,11 @@ $(function () {
 
     const colors = {
         Tip: "#C0392B",       // Koyu kırmızı
-                Dis: "#27AE60",       // Koyu yeşil
-                Yazilim: "#2980B9",   // Koyu mavi
-                Makine: "#8E44AD",    // Koyu mor
-                Elektrik: "#D35400",  // Koyu turuncu
-                Bilgisayar: "#16A085" // Koyu teal
+        Dis: "#27AE60",       // Koyu yeşil
+        Yazilim: "#2980B9",   // Koyu mavi
+        Makine: "#8E44AD",    // Koyu mor
+        Elektrik: "#D35400",  // Koyu turuncu
+        Bilgisayar: "#16A085" // Koyu teal
     };
 
     const selectedFilters = new Set(Object.keys(data)); // Varsayılan seçili bölümler
@@ -68,4 +68,69 @@ $(function () {
 
     // İlk grafiği çiz
     plotGraph();
+});
+
+$(function () {
+    // Canlı veri örneği
+    var data = [5, 10, 15, 20, 15, 30, 40],
+        totalPoints = 100;
+
+    function getRandomData() {
+        if (data.length > 0) data = data.slice(1);
+
+        // Rastgele veri oluştur
+        while (data.length < totalPoints) {
+            var prev = data.length > 0 ? data[data.length - 1] : 10,
+                y = prev + Math.random() * 10 - 5;
+            if (y < 0) {
+                y = 0;
+            } else if (y > 100) {
+                y = 100;
+            }
+            data.push(y);
+        }
+
+        // Y ekseni değerlerini oluştur
+        var res = [];
+        for (var i = 0; i < data.length; ++i) {
+            res.push([i, data[i]]);
+        }
+        return res;
+    }
+
+    // Kontrol widget'ını ayarla
+    var updateInterval = 1000;
+    $("#updateInterval").val(updateInterval).change(function () {
+        var v = $(this).val();
+        if (v && !isNaN(+v)) {
+            updateInterval = +v;
+            if (updateInterval < 1) {
+                updateInterval = 1;
+            } else if (updateInterval > 1000) {
+                updateInterval = 1000;
+            }
+            $(this).val("" + updateInterval);
+        }
+    });
+
+    var plot = $.plot("#real-time", [getRandomData()], {
+        series: {
+            shadowSize: 0, // çizgileri yumuşatma
+        },
+        yaxis: {
+            min: 0,
+            max: 100,
+        },
+        xaxis: {
+            show: false,
+        },
+    });
+
+    function update() {
+        plot.setData([getRandomData()]);
+        plot.draw();
+        setTimeout(update, updateInterval);
+    }
+
+    update();
 });

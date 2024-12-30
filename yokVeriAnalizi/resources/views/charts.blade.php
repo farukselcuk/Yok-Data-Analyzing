@@ -335,19 +335,19 @@
                 <!-- ============================================================== -->
                 <!-- Chart-1 -->
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Anlık ziyaretici</h5>
-                                <div id="real-time" style="height:400px;"></div>
-                                <p>Güncellemeler arasındaki süre:
-                                    <input id="updateInterval" type="text" value=""
-                                        style="text-align: right; width:5em"> milisaniye
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Anlık Site Ziyaretici</h5>
+                                                <div id="real-time" style="height:400px;"></div>
+                                                <p>Güncellemeler arasındaki süre:
+                                                    <input id="updateInterval" type="text" value=""
+                                                        style="text-align: right; width:5em"> milisaniye
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                      </div>
                 <!-- ENd chart-1 -->
                 <!-- Chart-2 -->
                 <div class="row">
