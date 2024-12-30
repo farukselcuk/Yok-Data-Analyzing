@@ -338,7 +338,7 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Anlık Site Ziyaretici</h5>
+                                                <h5 class="card-title">Anlık Site Ziyaretiçisi</h5>
                                                 <div id="real-time" style="height:400px;"></div>
                                                 <p>Güncellemeler arasındaki süre:
                                                     <input id="updateInterval" type="text" value=""
